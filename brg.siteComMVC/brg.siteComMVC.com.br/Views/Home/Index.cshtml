@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container mt-5">
+    <section class="content text-center">
+        <div class="container-fluid">
+            <h1>Home</h1>
+        </div>
+    </section>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+                    <p class="card-text">
+                        On the Users page you can see all the Users and add a new one
+                    </p>
+                    <a asp-area="" asp-controller="User" asp-action="Index" class="card-link">List Users</a>
+                    <a asp-area="" asp-controller="User" asp-action="AddUser" class="card-link">Add User</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <p class="card-text">
+                        On the contact page you can see the ways you can contact our team
+                    </p>
+                    <a asp-area="" asp-controller="Contact" asp-action="Index" class="card-link">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Privacy</h5>
+                    <p class="card-text">
+                        On the privacy page you can read our privacy terms
+                    </p>
+                    <a asp-area="" asp-controller="Privacy" asp-action="Index" class="card-link">Privacy</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

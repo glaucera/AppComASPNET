@@ -1,0 +1,44 @@
+﻿@model List<UserViewModel>
+
+    <div class="container mt-5">
+        <section class="content text-center">
+            <div class="container-fluid">
+                <h1>Users List</h1>
+            </div>
+        </section>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body table-responsive p-0" style="height: 500px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>Salary</th>
+                                    <th>CPF</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var usuario in Model)
+                                {
+                                    <tr>
+                                        <td>@usuario.Id</td>
+                                        <td>@usuario.FirstName @usuario.LastName</td>
+                                        <td>@usuario.Email</td>
+                                        <td>@usuario.Phone</td>
+                                        <td>@usuario.Address.</td>
+                                        <td>@usuario.Salary.ToString("F2")</td>
+                                        <td>@usuario.CPF</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
